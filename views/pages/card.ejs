@@ -1,0 +1,30 @@
+<div>
+    <ul>
+        <li>
+            <strong>City :</strong>
+            <% if (data.location) { %>
+                <span><%= data.location.name %>,<%= data.location.region %>,<%= data.location.country %></span>
+            <% } %>           
+        </li>
+        <li>
+            <strong>Temparature (C):</strong>
+            <span><%= data.current.temp_c %></span>
+        </li>
+        <li>
+            <strong>Humidity :</strong>
+            <span><%= data.current.humidity %></span>
+        </li>
+        <li>
+            <strong>Cloud :</strong>
+            <span><%= data.current.cloud %></span>
+        </li>
+    </ul>
+</div>
+
+<style>
+    li {
+        list-style: none;
+        margin-top: 3px;
+        color: #429fff;
+    }
+</style>
